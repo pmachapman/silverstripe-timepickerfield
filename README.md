@@ -7,7 +7,7 @@ A time picker field based on jQuery UI Timepicker By François Gélinas
 Requirements
 --------
 
-SilverStripe 4 (see previous releases for SS3 compat)
+SilverStripe 5
 
 Usage
 --------

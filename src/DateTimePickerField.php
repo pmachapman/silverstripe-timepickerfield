@@ -1,6 +1,6 @@
 <?php
 
-namespace SheaDawson\TimePickerField;
+namespace PMAChapman\TimePickerField;
 
 use SilverStripe\Forms\DatetimeField;
 

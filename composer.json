@@ -1,5 +1,5 @@
 {
-    "name": "silverstripe/timepickerfield",
+    "name": "pmachapman/silverstripe-timepickerfield",
     "description": "A time picker field for SilverStripe based on the jQuery UI Timepicker By François Gélinas http://fgelinas.com/code/timepicker/",
     "type": "silverstripe-vendormodule",
     "keywords": [
@@ -7,21 +7,19 @@
         "forms",
         "time"
     ],
-    "homepage": "http://github.com/sheadawson/silverstripe-timepickerfield",
+    "homepage": "http://github.com/pmachapman/silverstripe-timepickerfield",
     "authors": [
         {
-            "name": "Shea Dawson",
-            "email": "shea@livesource.co.nz"
+            "name": "Peter Chapman",
+            "email": "peter@conglomo.co.nz"
         }
     ],
+    "license": "MIT",
     "require": {
-        "silverstripe/framework": "^4.0",
+        "silverstripe/framework": "^5.0",
         "composer/installers": "*"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        },
         "expose": [
             "client/css/",
             "client/javascript/"

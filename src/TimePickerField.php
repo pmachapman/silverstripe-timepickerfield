@@ -1,8 +1,7 @@
 <?php
 
-namespace SheaDawson\TimePickerField;
+namespace PMAChapman\TimePickerField;
 
-use SilverStripe\Core\Convert;
 use SilverStripe\Forms\TimeField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
 use SilverStripe\View\Requirements;
@@ -33,15 +32,14 @@ class TimePickerField extends TimeField
     {
         $this->addExtraClass('timepicker')
              ->setAttribute('autocomplete', 'off')
-             ->setAttribute('data-jqueryuiconfig', Convert::array2json($this->timePickerConfig));
+             ->setAttribute('data-jqueryuiconfig', json_encode($this->timePickerConfig));
 
-        Requirements::javascript('silverstripe/admin: thirdparty/jquery/jquery.js');
         Requirements::javascript('silverstripe/admin: thirdparty/jquery-ui-themes/smoothness/jquery-ui.css');
         Requirements::javascript('silverstripe/admin: thirdparty/jquery-ui/jquery-ui.js');
 
-        Requirements::javascript('silverstripe/timepickerfield:client/javascript/jquery.ui.timepicker.js');
-        Requirements::javascript('silverstripe/timepickerfield:client/javascript/timepickerfield.js');
-        Requirements::css('silverstripe/timepickerfield:client/css/jquery.ui.timepicker.css');
+        Requirements::javascript('pmachapman/silverstripe-timepickerfield:client/javascript/jquery.ui.timepicker.js');
+        Requirements::javascript('pmachapman/silverstripe-timepickerfield:client/javascript/timepickerfield.js');
+        Requirements::css('pmachapman/silverstripe-timepickerfield:client/css/jquery.ui.timepicker.css');
 
         return parent::Field($properties);
     }
